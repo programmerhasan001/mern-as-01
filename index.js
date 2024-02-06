@@ -1,6 +1,5 @@
 const http = require("http");
 const fs = require("fs");
-const multer = require("multer");
 const PORT = 5500;
 
 const server = http.createServer(function (req, res) {
