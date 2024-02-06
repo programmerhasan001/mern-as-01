@@ -1,5 +1,6 @@
 const http = require("http");
 const fs = require("fs");
+const multer = require("multer");
 const PORT = 5500;
 
 const server = http.createServer(function (req, res) {
@@ -26,11 +27,6 @@ const server = http.createServer(function (req, res) {
     res.writeHead(404, { "Content-Type": "text/plain" });
     res.write("Page not found");
   }
-
-  //   File upload
-  if (method === "POST" && req.url === "/upload") {
-  }
-
   res.end();
 });
 
